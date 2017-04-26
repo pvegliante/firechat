@@ -54,7 +54,7 @@ function login() {
         var user = result.user;
 
        $('#login-screen').fadeOut(function() {
-            $("#chat-screen").fadeIn();
+            $("#chat-screen").css('display', 'flex');
         });
 
        loadMessages()

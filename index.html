@@ -5,24 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Firebase Chat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
 </head>
 
 <body>
-    <div id="chat-screen">
-        <div id="login-screen">
-            <button type="button" id="login-btn" name="button">Login</button>
+    <div class="main-login" id="login-screen">
+        <div class="top-login">
+            <div class="chat">
+                <h1>Chat</h1></div>
+            <div class="logimg">
+                <div><img src="./images/Chat-icon.png" alt="" class="bubble"></div>
+            </div>
         </div>
-        <div class="title">The Matrix</div>
+        <div class="bottom-login">
+            <div class="all-icons">
+                <div class="fbicon">
+                    <div class="facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i></div>
+                </div>
+                <div class="twticon">
+                    <div class="twitter"><i class="fa fa-twitter-square" id="twt" aria-hidden="true"></i></div>
+                </div>
+                <div class="googicon">
+                    <div class="google"><i class="fa fa-google-plus-square" id="goog" aria-hidden="true"></i></div>
+                </div>
+
+            </div>
+            <div class="button"><button type="button" id="login-btn" name="button"><i class="fa fa-sign-in" aria-hidden="true"></i></button></div>
+        </div>
+    </div>
+
+    <div id="chat-screen">
+      <div class="header">Chat Box</div>
         <div id="messages"></div>
+        <div class="input-container">
+            <input type="text" id="message-input">
+        </div>
     </div>
-    <div class="input-container">
-        <input type="text" id="message-input">
-    </div>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js"></script>
-    <script src="js/main.js"></script>
+
+</body>
+
+</html>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js"></script>
+<script src="js/main.js"></script>
 </body>
 
 </html>
